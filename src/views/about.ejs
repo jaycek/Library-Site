@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+        <link href="/css/styles.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../Images/favicon-16x16.png" />
+    </head>
+    <body >
+        
+        <nav class="navbar navbar-expand-lg bg-dark" >
+            <a class="navbar-brand" href="#" style="color:whitesmoke;">
+           <img src="../Images/favicon.ico" width="30" height="30" alt="">
+               Bookworld-A Treasure House for Book Lovers</a>
+           
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav mx-auto " >
+                <%for(i=0;i<nav.length;i++){%>
+                    <li class="nav-item  p-3">
+                      <a class="nav-link text-white" href="<%=nav[i].link%>"><%=nav[i].name%> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <%}%>
+              
+                </ul>
+            </div>
+       </nav>
+        <div class="container p-3">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <img src="../Images/library.jpg" style="height:400px; width:100%;">
+                </div>
+                <div class="form-group col-md-6">
+                    <div class="h3 text-center" style="font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Get to know us</div>
+                    <br>
+                    <p >
+                        We at Bookworld believe in the power of reading, the importance of literacy,
+                        and the fact that books should be as inclusive and diverse
+                        as readers are. Reading is part of our identity,
+                        and it’s one we’re proud to have and share with you.
+                    </p>
+                    <p>
+                        We at Bookworld are presenting an independent voice to highlight books and a bookish lifestyle. Welcome! 
+                        Recurring features include: book recommendations, author interviews & guest posts from publishing professionals, cover and stepback reveals, gift guides, book club resources, NetGalley member spotlights, and more.
+                        Genres covered include: Fiction, Mystery/Thriller, Romance, Science Fiction, Fantasy, and Young Adult.
+                        If you have any questions or need to report a problem:<span style="color:brown;"> support@bookworld.com.</span>
+                    </p>
+                </div>
+            </div> 
+        </div>
+        <script src="/js/jquery.js"></script>
+        <script src="/js/popper.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+    </body>
+</html>
